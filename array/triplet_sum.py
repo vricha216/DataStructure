@@ -6,12 +6,6 @@
 
 
 # nlogn+n**2 = n**2
-[2,3,7,1,6,8,15,9,4,5]
-
-curr_sum = 2
-curr_sum = 2+3 = 5
-curr_sum = 5+5 = 10
-
 
 def triplet_sum(arr:list,target:int):
     arr.sort()
