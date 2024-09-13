@@ -24,6 +24,21 @@ def main():
 if __name__ == "__main__":
     main()
     
+# divide the array into parts sorted and un-sorted then pick a value from unsorted array and placed it to the sorted array
+
+
+#Algorithm
+#           [64, 25, 12, 22, 11]
+#         /                    \
+# [64](supposed sorted)       [25, 12, 22, 11](unsorted)
+# /                                 \
+# [25,64]                          [12, 22, 11]
+# (compare first 
+# element from 
+# unsorted and swap
+# if it is smaller)
+# / 
+# [25,]
 
 
 
