@@ -8,8 +8,6 @@
 
 
 def max_band(arr):
-    n = len(arr)
-    
     c = 0
     fc = 0
     x = set(arr)
