@@ -11,9 +11,6 @@ a= [1,9,3,0,18,5,2,4,10,7,12,6]
 # print(a[:ans[0]])
 
 
-
-
-
 def largest_band(a):
     n = len(a)
     i = 0
