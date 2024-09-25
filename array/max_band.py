@@ -8,20 +8,20 @@
 
 
 def max_band(arr):
-    c = 0
-    fc = 0
+    count = 0
+    final_count = 0
     x = set(arr)
     
     for i in arr:
         if (i-1) not in x:
             start = i
-            c = 1
+            count = 1
             while start+1 in x:
-                c+=1
+                count+=1
                 start+=1
-            fc = max(c,fc)
+            final_count = max(count,final_count)
             
-    return fc
+    return final_count
                 
 
 def main():

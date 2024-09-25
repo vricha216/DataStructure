@@ -21,6 +21,7 @@ def partition(arr,low,high):
     for j in range(low,high):
         if arr[j]< pivot:
             i += 1 #move the pointer for smaller elements
+            print(i,j,arr,"lol")
             arr[i], arr[j] = arr[j],arr[i]
             
     # place the pivot element in its correct position

@@ -25,20 +25,21 @@
             
 #     return pairs
 
-
 def find_pairs_with_sum(arr,s):
     n = len(arr)
     h = {}
     pairs = []
     for i in arr:
         comp = s - i
-        if comp in h and h.get(comp) > 0 and h.get(i)>0:
+        if comp in h and h.get(comp) > 0:
             pairs.append((comp,i))
             h[comp] -= 1
-            h[i] -= 1
+            # h[i] -= 1
         else:
-            h[i] = h.get(i,0) + 1
+            # h[i] = h.get(i,0) + 1
             h[comp] = h.get(comp,0)+1
+            
+    print(h)
     return pairs
          
 

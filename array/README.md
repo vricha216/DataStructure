@@ -26,3 +26,20 @@ Given an array of integers `nums` and an integer `target`, return distinct pair 
     - Time Complexity: O(n log n) due to the sorting step, plus O(n) for the two-pointer scan.
     - Space Complexity: O(1) (excluding the space used for sorting if in-place).
     - Explanation: After sorting, one pointer starts at the beginning and the other at the end of the array. Adjust the pointers based on the sum of the elements they point to. This approach is efficient but requires sorting.
+
+
+
+
+<!-- // Question 2:
+// The overall time complexity of the following code is ___________.
+
+// for(int i= 0; i < n; i = i + j){
+//      for( j = 0; j < k; j ++){
+//        // some work
+//      } 
+// } -->
+
+<!-- 
+The following binary when stored in signed integer would represent ______________ ?
+
+11111111111111111111111111111111 -->

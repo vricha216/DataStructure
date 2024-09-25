@@ -7,6 +7,19 @@ def selection_sort(arr,n):
         arr[i],arr[minimum]= arr[minimum],arr[i]
     return arr
 
+
+# [64, 25, 12, 22, 11]
+
+# min = 12
+# 12,25,64,22,11
+# min = 22
+# 12,22,64,25,11
+# min = 22
+# 12,22,64,25,11
+
+
+
+
 # def selection_sort(arr,n):
 #     i = 0
 #     j = i+1

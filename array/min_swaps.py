@@ -38,7 +38,7 @@ def min_swap(arr):
 def main():
     # arr = [2,4,5,1,3]
     # print(min_swap(arr))
-    arr = [5,4,3,2,1]
+    arr = [10, 11, 5, 4, 3, 2, 1]
     print(min_swap(arr))
     # arr = [10,11,5,4,3,2,1]
     # print(min_swap(arr))
@@ -54,14 +54,10 @@ if __name__ == '__main__':
 # Pair Each Element with Its Index:
 
 # We create pairs of (index, value) using enumerate:
-# python
-# Copy code
 # arr_with_index = [(0, 2), (1, 4), (2, 5), (3, 1), (4, 3)]
 # Sort Based on the Array Values:
 
 # We sort arr_with_index based on the values:
-# python
-# Copy code
 # arr_with_index.sort(key=lambda x: x[1])
 # # After sorting: arr_with_index = [(3, 1), (0, 2), (4, 3), (1, 4), (2, 5)]
 # This shows the correct position of each element.
@@ -74,8 +70,8 @@ if __name__ == '__main__':
     # Start at index i = 0, arr_with_index[0] is (3, 1):
     # It's not visited, and it's not in the correct position (3 != 0).
     # Follow the cycle:
-        # Move to index 3 (next_index = 3): (1, 4) → visited = [True, False, False, False, False]
-        # Move to index 1 (next_index = 1): (0, 2) → visited = [True, False, False, True, False]
+        # Move to index 3 (next_index = 3): (1, 4) → visited = [False, False, False, True, False]
+        # Move to index 1 (next_index = 1): (0, 2) → visited = [False, True, False, True, False]
         # Move to index 0 (next_index = 0): (3, 1) → visited = [True, True, False, True, False]
         # Cycle length is 3, so cycle_size - 1 = 3 - 1 = 2 swaps are required.
 # Cycle 2:

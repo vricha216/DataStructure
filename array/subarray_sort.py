@@ -1,6 +1,36 @@
 #find the sortest subarray that needs to be sorted in place so that entire array become sorted
 #if the input array is already sorted,the fucntion should return [-1,-1],otherwise return the start and end index of smallest subarray
 
+
+
+# arr = [1,2,3,4,5,8,6,7,9,10,11]
+# sorted_arr = [1,2,3,4,5,6,7,8,9,10,11]
+# i = 0
+# j = 10
+# take 2 pointers one on starting and another one on end
+# increament i if we got the element which is not matched from forward
+# decremant j if we got the element which is not matched from backward
+# output = [5,7] (indexes)
+
+
+
+#brute force -> o(nlogn)
+# def sort_subarr(arr):
+#     #sort the array
+#     n = len(arr)
+#     b = sorted(arr)
+#     i = 0
+#     j = n-1
+#     while i<n and arr[i] == b[i]:
+#         i+=1
+#     while j>0 and arr[j] == b[j]:
+#         j-=1
+    
+#     if i == n:
+#         return [-1,-1]
+#     return [i,j]
+
+
 def get_start(arr,start_in,n):
     for i in range(0,n-1):
         if arr[i+1]-arr[i] != 1:
